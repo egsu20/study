@@ -1,0 +1,8 @@
+print("{:f}".format(52.273))
+print("{:15f}".format(52.273))
+print("{:+15f}".format(52.273))
+print("{:+015f}".format(52.273))
+print()
+print("{:15f}".format(52.273))
+print("{:15.2f}".format(52.273))
+print("{:15.1f}".format(52.273))

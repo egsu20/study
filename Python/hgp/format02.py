@@ -1,0 +1,12 @@
+output1 = "{:+5d}".format(52)
+output2 = "{:+5d}".format(-52)
+output3 = "{:=+5d}".format(52)
+output3 = "{:=+5d}".format(52)
+output4 = "{:+05d}".format(52)
+output5 = "{:+05d}".format(-52)
+
+print(output1)
+print(output2)
+print(output3)
+print(output4)
+print(output5)
