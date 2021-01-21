@@ -27,6 +27,11 @@ h1,
 #article {
   padding-left: 50px;
 }
+
+.ColorType {
+  align-items: right;
+}
+
 @media (max-width: 800px) {
   #grid {
     display: block;
