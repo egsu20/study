@@ -6,7 +6,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="index.html" id="title">WEB</a></h1>
+  <div id="top">
+    <h1><a href="index.html" id="title">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+      var target = document.querySelector('body');
+      /* 리스트 색 토글
+      var li = document.querySelectorAll('li');
+      var li_a = document.querySelectorAll('li a');*/
+
+      if(this.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+        /* var i = 0;
+        while( i < li.length){
+            li[i].style.color='powderblue';
+            li_a[i].style.color='powderblue';
+            i++;
+        }*/
+      } else{
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+        /* var i = 0;
+        while( i < li.length){
+            li[i].style.color='palevioletred';
+            li_a[i].style.color='palevioletred';
+            i++;
+        } */
+      }
+    ">
+  </div>
 
   <div id="grid">
     <ol>
@@ -16,15 +46,6 @@
     </ol>
 
     <div id="article">
-      <input class="ColorType" type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-      ">
-      <input class="ColorType" type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-      ">
-
       <h2>WEB</h2>
       <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

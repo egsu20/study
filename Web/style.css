@@ -10,13 +10,17 @@ ol a {
   padding: 20px;
   padding-left: 40px;
 }
+
+#top {
+  border-bottom: 1px solid gray;
+}
+
 h1,
 #title {
   color: rgb(206, 78, 120);
   font-size: 60px;
   text-align: center;
   text-decoration: none;
-  border-bottom: 1px solid gray;
   margin: 0;
   padding: 30px;
 }
@@ -28,8 +32,9 @@ h1,
   padding-left: 50px;
 }
 
-.ColorType {
+#night_day {
   align-items: right;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 800px) {
