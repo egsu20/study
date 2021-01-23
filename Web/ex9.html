@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ex9</title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script>
+      function onePlusOne(){
+        document.write(1+1+'<br>');
+      }
+      onePlusOne();
+      function sum(n, m){ // n, m = parameter
+        document.write(n+m+'<br>');
+      }
+      sum(3,2); // 3, 2 = argument
+      sum(6,1);
+    </script>
+    <h2>Return</h2>
+    <script>
+      function sum2(n, m){
+        return n + m;
+      }
+      document.write(sum2(2,3)+'<br>');
+      document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+    </script>
+  </body>
+</html>

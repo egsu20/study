@@ -4,37 +4,46 @@
   <title>WEB1 - HTML</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function nightDayHandler(self){
+      var target = document.querySelector('body');
+      var li = document.querySelectorAll('li');
+      var li_a = document.querySelectorAll('li a');
+      var title = document.querySelector('h1 a');
+
+      if(self.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = 'day';
+        var i = 0;
+        
+        title.style.color='rgb(74, 183, 197)';
+        while( i < li_a.length){
+            li[i].style.color='powderblue';
+            li_a[i].style.color='powderblue';
+            i++;
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        self.value = 'night';
+        var i = 0;
+
+        title.style.color='rgb(206, 78, 120)';
+        while( i < li_a.length){
+            li[i].style.color='palevioletred';
+            li_a[i].style.color='palevioletred';
+            i++;
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <div id="top">
     <h1><a href="index.html" id="title">WEB</a></h1>
     <input id="night_day" type="button" value="night" onclick="
-      var target = document.querySelector('body');
-      /* 리스트 색 토글
-      var li = document.querySelectorAll('li');
-      var li_a = document.querySelectorAll('li a');*/
-
-      if(this.value === 'night') {
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        this.value = 'day';
-        /* var i = 0;
-        while( i < li.length){
-            li[i].style.color='powderblue';
-            li_a[i].style.color='powderblue';
-            i++;
-        }*/
-      } else{
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        this.value = 'night';
-        /* var i = 0;
-        while( i < li.length){
-            li[i].style.color='palevioletred';
-            li_a[i].style.color='palevioletred';
-            i++;
-        } */
-      }
+      nightDayHandler(this);
     ">
   </div>
 
