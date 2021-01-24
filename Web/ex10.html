@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ex10</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var arr = {
+        "n1":"one",
+        "n2":"two"
+      };
+      document.write("n1 : "+arr.n1+"<br>");
+      document.write("n2 : "+arr.n2+"<br>");
+      arr.n3 = "three";
+      document.write("n3 : "+arr.n3+"<br>");
+      arr["n 4"] = "four";
+      document.write("n 4 : "+arr["n 4"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+      for(var key in arr) {
+        document.write(key+" : "+arr[key]+'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      arr.showAll = function(){
+        for(var key in this) {
+          document.write(key+" : "+this[key]+'<br>');
+        }
+      } // var showAll = function(){} , function showAll(){}
+      arr.showAll();
+
+    </script>
+  </body>
+</html>

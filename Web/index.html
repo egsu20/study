@@ -3,41 +3,9 @@
 <head>
   <title>WEB1 - HTML</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function nightDayHandler(self){
-      var target = document.querySelector('body');
-      var li = document.querySelectorAll('li');
-      var li_a = document.querySelectorAll('li a');
-      var title = document.querySelector('h1 a');
-
-      if(self.value === 'night') {
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        self.value = 'day';
-        var i = 0;
-        
-        title.style.color='rgb(74, 183, 197)';
-        while( i < li_a.length){
-            li[i].style.color='powderblue';
-            li_a[i].style.color='powderblue';
-            i++;
-        }
-      } else {
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        self.value = 'night';
-        var i = 0;
-
-        title.style.color='rgb(206, 78, 120)';
-        while( i < li_a.length){
-            li[i].style.color='palevioletred';
-            li_a[i].style.color='palevioletred';
-            i++;
-        }
-      }
-    }
-  </script>
+  <script src="colors.js"></script>
 </head>
 <body>
   <div id="top">
