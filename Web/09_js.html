@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function getGrade(){
+        var kor=95; // 지역변수
+        eng=95; // 자동 전역 변수
+      }
+      var kor=100; // 전역변수
+      var eng=100;
+      getGrade();
+      document.write("국어 점수 : "+kor+"<br>");
+      document.write("영어 점수 : "+eng+"<br>");
+    </script>
+  </body>
+</html>
