@@ -11,9 +11,10 @@ class StringStack implements StackInterface {
 	private static int top = 0;
 	
 	public int length() {
-		return str.length;
+		return top;
 	}
 	public String pop() {
+		
 		return str[--top];
 	}
 	public boolean push(String ob) {
@@ -39,7 +40,7 @@ public class ch5_5 {
 		}
 		
 		for(int i = 0 ; i < 5 ; i++) {
-			System.out.print(stack.pop()+" ");
+			System.out.print("("+stack.pop()+","+stack.length()+")");
 		}
 		
 		sc.close();
